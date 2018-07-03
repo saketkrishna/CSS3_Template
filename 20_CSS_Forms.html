@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/Mt.-Rainier-Washington-USA-wallpaper.jpg");
+            background-size: cover;
+        }
+        .form-div{
+            border: 2px solid blue;
+            width: 250px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 25px 5px;
+            background-image: url("https://i.pinimg.com/originals/30/71/ae/3071aeb098183d22cb69d1dfeb1c7319.gif");
+            background-size: cover;
+        }
+        .form-div h2{
+            color: darkblue;
+        }
+        input[type='text'],input[type='password']{
+            height: 35px;
+            font-size: 18px;
+            margin: 7px;
+            text-align: center;
+            width: 190px;
+            border: 2px solid blue;
+            border-radius: 20px;
+
+        }
+        input[type='submit']{
+            background-color: blue;
+            color: white;
+            border: none;
+            margin: 10px;
+            font-size: 20px;
+            padding: 7px 45px;
+            border-radius: 50px;
+
+        }
+        input[type='submit']:hover{
+            background-color: darkblue;
+            cursor:pointer ;
+            box-shadow: 0 0 15px blue;
+        }
+        input[type='text']:focus,
+        input[type='password']:focus{
+            outline: none;
+            background-color: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
